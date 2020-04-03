@@ -17,10 +17,10 @@
 
 ## Errors
   Input: 36d
-  Wrong temperature sign: `d`
+*  Wrong temperature sign: `d`
 
   Input: a
-  Wrong temperature sign: `a`
+*  Wrong temperature sign: `a`
 
   Input: 3
-  Wrong input: `3`
+*  Wrong input: `3`
