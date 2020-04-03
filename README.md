@@ -1,21 +1,21 @@
-#Ruby script for converting degrees Celsius to Fahrenheit and Kelvin.
+# Ruby script for converting degrees Celsius to Fahrenheit and Kelvin.
 
-##Celsius
+## Celsius
   Input: 36c
-  °F: 52
-  °K: 309
+*  °F: 52
+*  °K: 309
 
-##Fahrenheit
+## Fahrenheit
   Input: 32f
-  °C: 0
-  °K: 273
+*  °C: 0
+*  °K: 273
 
-##Kelvin
+## Kelvin
   Input: 273k
-  °C: 0
-  °F: 32
+*  °C: 0
+*  °F: 32
 
-##Errors
+## Errors
   Input: 36d
   Wrong temperature sign: `d`
 
