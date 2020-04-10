@@ -20,7 +20,7 @@ RSpec.describe ::Degree::Kelvin do
       it { is_expected.to eq(-441.4) }
     end
 
-    context 'value below is 0' do
+    context 'value below 0' do
       let(:value) { -10 }
 
       it { is_expected.to eq(-477.4) }
@@ -50,7 +50,7 @@ RSpec.describe ::Degree::Kelvin do
       it { is_expected.to eq(-263) }
     end
 
-    context 'value below is 0' do
+    context 'value below 0' do
       let(:value) { -10 }
 
       it { is_expected.to eq(-283) }

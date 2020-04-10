@@ -28,7 +28,7 @@ RSpec.describe ::Degree::Fahrenheit do
       it { is_expected.to be_within(0.2).of(260.928) }
     end
 
-    context 'value below is 0' do
+    context 'value below 0' do
       let(:value) { -10 }
 
       it { is_expected.to be_within(0.2).of(249.817) }
@@ -50,7 +50,7 @@ RSpec.describe ::Degree::Fahrenheit do
       it { is_expected.to be_within(0.2).of(-12.2222) }
     end
 
-    context 'value below is 0' do
+    context 'value below 0' do
       let(:value) { -10 }
 
       it { is_expected.to be_within(0.2).of(-23.3333) }

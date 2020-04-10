@@ -2,7 +2,7 @@
 
 require 'errors'
 
-class InputParser
+class InputParser # :nodoc:
   ParsedResult = Struct.new(:value, :sign)
 
   TEST_REGEXP = /
@@ -14,8 +14,11 @@ class InputParser
 
   def self.parse(stdin)
     input = stdin.gets&.chomp&.downcase
-    parsed_input = input.match(TEST_REGEXP) if input
-    raise Errors::ParseError, "Wrong input: `#{input}`" unless parsed_input
+    parsed_input = input&.match(TEST_REGEXP)
+
+    if parsed_input.nil? || parsed_input[:sign].empty? || parsed_input[:value].empty?
+      raise Errors::ParseError, "Wrong input: `#{input}`"
+    end
 
     value = parsed_input[:value]&.gsub(',', '.')&.to_f
     sign = parsed_input[:sign]&.downcase&.to_sym

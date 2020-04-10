@@ -20,7 +20,7 @@ RSpec.describe ::Degree::Celsius do
       it { is_expected.to eq(50.0) }
     end
 
-    context 'value below is 0' do
+    context 'value below 0' do
       let(:value) { -10 }
 
       it { is_expected.to eq(14.0) }
@@ -42,7 +42,7 @@ RSpec.describe ::Degree::Celsius do
       it { is_expected.to eq(283) }
     end
 
-    context 'value below is 0' do
+    context 'value below 0' do
       let(:value) { -10 }
 
       it { is_expected.to eq(263) }

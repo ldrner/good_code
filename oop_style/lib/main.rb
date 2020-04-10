@@ -16,7 +16,7 @@ class Main # :nodoc:
     print_header
 
     parse_result = InputParser.parse(stdin)
-    sign = validate_sign(parse_result.sign)
+    validate_sign(parse_result.sign)
 
     celsius = Degree::Celsius.new(parse_result.value)
     kelvin = Degree::Kelvin.new(celsius.to_kelvin)
